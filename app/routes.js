@@ -23,6 +23,7 @@ export default function createRoutes() {
       getComponent(nextState, cb) {
         const importModules = Promise.all([
           System.import('containers/HomePage'),
+          //import other stuffs like saga and reducer
         ]);
 
         const renderRoute = loadModule(cb);
